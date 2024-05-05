@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Metro card management</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="dist/index.js"></script>
+</head>
+<body>
+    <div id="container">
+    <!-- Home Page -->
+    <div id="home">
+    <div id="homePage">
+        <h1>Metro card Management</h1>
+        <button type="button" onclick="newUserPage()" id="signUp">Sign Up</button>
+        <button type="button" onclick="existingUserPage()" id="signIn">Sign In</button>
+    </div>
+
+    <!-- Sign Up  -->
+    <div id="newUserPage">
+        <h3>Sign Up Page</h3>
+        <label >User Name</label><br>
+        <input type="text" id="newUserName" onkeyup="checkNewUserName('newUserName')">
+        <label id="newUserNameMessage"></label><br>
+
+        <label>Phone Number</label><br>
+        <input type="text" id="newUserPhone" onkeyup="checkNewUserPhone('newUserPhone')">
+        <label id="newUserPhoneMessage"></label><br><br>
+        <button type="button" onclick="signUp()">Sign Up</button>
+    </div>
+
+    <div id="existingUserPage">
+        <h3>Sign In Page</h3>
+        <label>User Card Number</label><br>
+        <input type="text" id="existingCardNumber"><br><br>
+        <button type="button" onclick ="signIn()">Sign In</button>
+    </div>
+    </div>
+    <div id="menu">
+    <div id="mainMenu">
+        <h3 style="text-align: center;">Main Menu Page</h3>
+        <button onclick="balanceCheck()">Balance Check</button>
+        <button onclick="recharge()">Recharge</button>
+        <button onclick="viewTravelHistory()">View Travel History</button>
+        <button onclick="travel()">Travel</button>
+        <button onclick="exit()">Exit</button>
+    </div>
+    <!-- Balance Check -->
+    <div id="balanceCheck">
+        <div id="balancePage"><h3>Balance Page</h3></div>
+        <div id="viewBalance"></div>
+    </div>
+    <!-- recharge -->
+    <div id="recharge">
+        <div><h3>Recharge</h3></div>
+        <div id="rechargeInput">
+        <label>Enter the amount </label>
+        <input type="text" id="rechargeAmount"> <br><br>
+        
+        <button onclick="rechargeBtn()">Recharge</button>
+        </div>
+    </div>
+    <!-- View Travel History -->
+    <div id="viewTravelHistory">
+        <div><h3>Travel History</h3></div>
+        <div id="travelDetails">
+            <table id="travelDetailsTable" border="2">
+            </table>
+        </div>
+    </div>
+    <!-- Travel -->
+    <div id="travel">
+        <div><h3>Travel</h3></div>
+        <div id="ticketFair">
+            <table id="ticketFairTable" border="2">
+            </table>
+        </div>
+        <div id="ticketIdUser">
+            <br><br>
+            <label>Enter the Ticket ID to travel</label>
+            <input type="text" id="ticketIdInput"><br><br>
+            <button onclick="ticketIdToBook()">Submit</button>
+        </div>
+    
+    </div>
+    <!-- Exit -->
+    <div id="exit">
+
+    </div>
+    </div>
+    </div>
+
+   
+ 
+</body>
+</html>

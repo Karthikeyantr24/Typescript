@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Medical Store</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script  type="text/JavaScript" src="dist/index.js"></script>
+</head>
+<body>
+    
+</body>
+</html>
+
+    <body>
+        <!-- Home Page -->
+        <div id="homePage">
+            <h2>Home</h2>
+            <button type="button" onclick="newUserPage()">Sign Up</button>
+            <button type="button" onclick="existingUserPage()">Sign In</button>
+        </div>
+
+        <!-- User Page -->
+        <div id="newUserPage" >
+    
+            
+                <h3>Sign Up Page</h3>
+                <label>UserName</label><br>
+                <input type="text" id="newUserName" onkeyup="checkNewUserName('newUserName')">
+                <label id="newUserNameMessage"></label><br>
+
+                <label>Email</label><br>
+                <input type="email" id="newUserEmail" onkeyup="checkNewUserEmail('newUserEmail')">
+                <label id="newUserEmailMessage"></label><br>
+
+                <label> Password</label><br>
+                <input type="password" id="newUserPassword"  onkeyup="checkNewUserPassword('newUserPassword')">
+                <label id="newUserPasswordMessage"></label><br>
+
+                <label>Confirm Password</label><br>
+                <input type="password" id="newUserConfirmPassword" onkeyup="checkNewUserConfirmPassword('newUserConfirmPassword')">
+                <label id="newUserConfirmPasswordMessage"></label><br>
+
+                <label>Phone Number</label><br>
+                <input type="newUserPhone" id="newUserPhone" onkeyup="checkNewUserPhone('newUserPhone')">
+                <label id="newUserPhonelMessage"></label><br><br>
+
+                <button onclick="signUp()">Sign Up</button>
+            
+            
+        </div>
+
+        <!-- Existing User Page -->
+         <div id="existingUserPage">
+    
+                <h3>Sign In Page</h3>
+                <label >EmailId</label><br>
+                <input type="text" id="existingEmailId"><br>
+
+                <label> Password</label><br>
+                <input type="password" id="existingPassword"><br><br>
+
+                <button  type="button" onclick="signIn()">Sign In</button><br>
+                <!-- <label id="availableUser"></label> -->
+            
+        </div>
+
+        <!-- Main Menu Page -->
+        <div id="mainMenu">
+            <h3>Main Menu Page</h3>
+            <button id="home" onclick="home()">Home</button> 
+            <!-- <button id="home-back" type="button">Back</button> -->
+            <button  onclick="medicineDetails()"> Medicine Details</button>
+            <button onclick="purchase()">Purchase Details</button>
+            <button onclick="cancel()">Cancel</button>
+            <button onclick="topUp()">TopUp</button>
+            <button  onclick="showBalance()" >Show Balance</button>
+            <button onclick="orderHistory()">Order History</button>
+        </div> 
+        <!-- Home -->
+        <div id="home1"></div>
+
+        <!-- Medicine Details -->
+        <div id="medicineDetails">
+            <h2>Medicine Details</h1>
+            <button id="addBtn" onclick="addBtn()">Add</button>
+            
+            <div id="addBtnDisplay">
+            <label>Medicine name</label>
+            <input type="text" id="addMedicineName"><br>
+            <label>Medicine Price</label>
+            <input type="text" id="addMedicinePrice"><br>
+            <label>Medicine Count</label>
+            <input type="text" id="addMedicineCount"><br>
+            <label>Expiry Date</label>
+            <input type="date" id="addMedicineExpiryDate"><br><br>
+            <button id="addBtnSubmit" onclick="addBtnSubmit()">Submit</button>
+            </div>
+            <!-- <div id="editBtnDisplay">
+                <label>Medicine name</label>
+                <input type="text" id="editMedicineName"><br>
+                <label>Medicine Price</label>
+                <input type="text" id="editMedicinePrice"><br>
+                <label>Medicine Count</label>
+                <input type="text" id="editMedicineCount"><br>
+                <label>Expiry Date</label>
+                <input type="date" id="editMedicineExpiryDate"><br><br>
+                <button id="editBtnSubmit" onclick="editBtnSubmit()">Edit</button>
+            </div> -->
+            <div id="deleteDiv">
+                <table id="deleteTable" border="3">
+                </table>
+
+            </div>
+            <div>
+            <table id="tdMedicine" border="3">
+             
+            </table>
+            </div>
+        </div>
+
+        <!-- Purchase -->
+        <div id="purchase">
+            <h2>Purchase </h2>
+                <table id="tdPurchase" border="3">
+                </table>
+
+                <div id="buyCount">
+                    <label >Count Required</label>
+                    <input type="text" id="buyInput">
+                    <button id="countBtn" onclick="confirmBuy()">Buy</button>
+                </div>
+        </div>
+
+        <!-- Cancel -->
+        <div id="cancel">
+            <h2>Cancel Order</h2>
+            <table id="tdCancel" border=""3>
+                
+            </table>
+        </div>
+
+        <!-- TopUp -->
+        <div id="topUpPage">
+            <h2>TopUP Page</h2>
+            <label >Enter the amount to be recharged :</label>
+            <input type="text" id="amount"> <br>
+            <button type="button" onclick="topUp1()">Submit</button>
+        </div>
+        <div id="topUpPage1">
+        </div>
+
+        <!-- Show Balance -->
+        <div id="showBalance">
+            <h2>Show Balance Page</h2>
+            <div id="showBalance1"></div>
+        </div>
+        
+        <!-- Order History -->
+        <div id="orderHistory">
+            <h2>Order History</h2>
+                <table id="tdOrder" border="3">
+                </table>      
+        </div>    
+
+    </body>
+</html>

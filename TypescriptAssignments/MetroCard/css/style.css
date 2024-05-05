@@ -1,0 +1,70 @@
+#container{
+    position: relative;
+}
+#homePage{
+    display: block;
+    margin-left: 35%;
+    /* border : 1px solid black;
+    height:30rem;
+    width:25rem; */
+}
+#signUp{
+    position: relative;
+    margin-left: 2.2rem;
+    width:5rem;
+    height: 2rem;
+    font-size: 1rem;
+}
+#signIn{
+    position: relative;
+    margin-left: 8rem;
+    width:5rem;
+    height: 2rem;
+    font-size: 1rem;
+}
+#newUserPage{
+    display:none;
+    margin-left: 35%;
+    margin-top: 6%;
+   
+}
+#existingUserPage{
+    display: none;
+    margin-left: 66%;
+    margin-top: 6%;
+}
+#home{
+    position: absolute;
+    margin-left: 15%;
+    border : 1px solid black;
+    width:50%;
+    height:20rem;
+    border: none;
+}
+#mainMenu{
+
+    display: none;
+}
+#balanceCheck{
+    display: none;
+}
+#recharge{
+    display: none;
+}
+#viewTravelHistory{
+    display: none;
+}
+#travel{
+    display: none;
+}
+#menu{
+    position: absolute;
+    margin-left:10rem;
+    margin-top: 1rem;  
+    
+}
+#mainMenu{
+    position: absolute;
+    margin-left: 10rem;
+}
+
